@@ -1,0 +1,16 @@
+#!/bin/bash
+
+printf "Downloading dataset ENEM 2017\n"
+#wget "download.inep.gov.br/microdados/microdados_enem2017.zip"
+printf "Done\n"
+printf "Extracting files ... "
+mkdir microdados_enem2017
+unzip microdados_enem2017.zip -d microdados_enem2017/ > /dev/null
+printf "Done\n"
+printf "Numberfying dataset (this might take a while, go grab a coffee) ... "
+python3 numberfy_2017.py > /dev/null
+printf "Done\n"
+printf "Copying to sqlite ... "
+sqlite3 "./microdados_enem2017/database.db" < setup-files/sqlite_commands > /dev/null 
+printf "Done\n"
+printf "You're all set! Have a nice day :)\n"
