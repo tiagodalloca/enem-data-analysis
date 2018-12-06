@@ -1,2 +1,3 @@
-# enem-data-keras
-Revisiting ENEM performance based on a previous applied socioeconomic questionnaire, implemented with Keras
+# Enem data analysis
+
+A comprehensible guide to understand how socioeconomic factors affect performance in Brazil's national high schol exam (ENEM) 
