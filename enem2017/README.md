@@ -7,6 +7,7 @@
 	- `pandas`
 	- `numpy`
 	- `seaborn`
+- `jupyter`
 	
 Make sure you have everything installed before proceding.
 
